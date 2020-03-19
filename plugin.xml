@@ -1,16 +1,32 @@
-<?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-refererchecker" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-  <name>RefererChecker</name>
-  <js-module name="RefererChecker" src="www/RefererChecker.js">
-    <clobbers target="cordova.plugins.RefererChecker" />
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+  xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="cordova-plugin-refererchecker"
+  version="1.0.0">
+
+  <description>Referer from play market</description>
+
+  <name>Google play Referer</name>
+  <author>Anton</author>
+  
+  
+  <repo>https://github.com/toxa43/refererchecker.git</repo>
+  <issue>https://github.com/toxa43/refererchecker/issues</issue>
+
+  <license>Apache 2.0</license>
+  <keywords>cordova,phonegap</keywords>
+  <js-module src="www/RefererChecker.js" name="RefererChecker">
+    <clobbers target="refererChecker"/>
   </js-module>
+
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">
       <feature name="RefererChecker">
-        <param name="android-package" value="cordova-plugin-refererchecker.RefererChecker" />
+        <param name="android-package" value="cordova.plugin.refererchecker.RefererChecker" />
       </feature>
     </config-file>
     <config-file parent="/*" target="AndroidManifest.xml"></config-file>
-    <source-file src="src/android/RefererChecker.java" target-dir="src/cordova-plugin-refererchecker/RefererChecker" />
+      <source-file src="src/android/RefererChecker.java" target-dir="src/cordova-plugin-refererchecker/RefererChecker" />
   </platform>
 </plugin>

@@ -2,13 +2,24 @@
   "name": "refererchecker",
   "version": "1.0.0",
   "description": "Get referer from url",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "cordova": {
+    "id": "refererchecker",
+    "platforms": [
+      "ios",
+      "android"
+    ]
   },
-  "author": "Redham",
-  "license": "ISC",
-  "dependencies": {
-    "npm-git-install": "^0.3.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toxa43/refererchecker.git"
+  },
+  "keywords": [
+    "cordova",
+    "referer",
+    "phonegap",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "Apache 2.0"
 }
